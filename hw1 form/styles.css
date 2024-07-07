@@ -1,0 +1,636 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(20, 20, 117);
+    z-index: -1;
+}
+.body-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 1400px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+    width: 1400px;
+}
+.Left {
+    display: flex;
+    align-items: center;
+}
+.Left h5{
+   padding-right: 5px; 
+}
+.Left input{
+    background-color: #ececec;
+    border-radius: 3px;
+    width: 50px;
+}
+.Middle{
+    display: flex;
+    align-items: center;
+}
+.Middle .mid-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Middle .mid-wrapper .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.Middle .mid-wrapper .logo img{
+    width: 150px;
+    height: 150px;
+}
+.Middle .mid-wrapper .name-wrapper{
+    margin: 0px;
+}
+.Middle .mid-wrapper .name1,
+.Middle .mid-wrapper .name2,
+.Middle .mid-wrapper .name3 {
+    text-align: center;
+}
+.Middle .mid-wrapper .name1 h4,
+.Middle .mid-wrapper .name2 h4,
+.Middle .mid-wrapper .name3 h4{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.Right{
+    display: flex;
+    justify-content: space-around;
+    background-color: #ececec;
+    border: 3px rgb(0, 0, 0) solid;
+}
+.Right .form-element{
+    width: 150px;
+    height: 200px;
+}
+.Right .form-element input{
+    display: none;
+}
+.Right .form-element img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Right .form-element .button{
+    position: relative;
+    height: 40px;
+    margin-top: -43px;
+    background-color: rgba(211, 211, 211, 0.788);
+    text-align: center;
+    line-height: 40px;
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.Right .form-element span{
+    font-size: 40px;
+}
+main{
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    width: 1400px;
+}
+.info-name{
+    display: flex;
+    align-items: center;
+}
+
+.info-name .name{
+    padding-left: 5px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.info-name .name input{
+    background-color: #ececec;
+    border-radius: 3px;
+    height: 20px;
+    width: 500px;
+}
+.info-name .name h5{
+    padding-right: 5px;
+}
+.info-name .surname{
+    padding-left: 5px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.info-name .surname input{
+
+    background-color: #ececec;
+    border-radius: 3px;
+    height: 20px;
+    width: 500px;
+}
+.info-name .surname h5{
+    padding-right: 5px;
+}
+.info-nameEn{
+    display: flex;
+    align-items: center;
+}
+
+.info-nameEn .name{
+    padding-left: 5px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.info-nameEn .name input{
+    background-color: #ececec;
+    border-radius: 3px;
+    height: 20px;
+    width: 500px;
+}
+.info-nameEn .name h5{
+    padding-right: 5px;
+}
+.info-nameEn .surname{
+    padding-left: 5px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.info-nameEn .surname input{
+    background-color: #ececec;
+    border-radius: 3px;
+    height: 20px;
+    width: 500px;
+}
+.info-nameEn .surname h5{
+    padding-right: 5px;
+}
+.birth-date{
+    display: flex;
+    align-items: center;
+}
+.birth-date label{
+    display: flex;
+    align-items: center;
+}
+.birth-date label h5{
+    padding-left: 5px;
+    padding-right:5px ;
+}
+.birth-date input{
+    background-color: #ececec;
+    border-radius: 3px;
+    height: 20px;
+}
+.position{
+    display: flex;
+    align-items: center;
+}
+.position .position-input{
+    display: flex;
+    align-items: center;
+}
+.position .position-input h5{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.position .position-input input{
+    background-color: #ececec;
+    border-radius: 3px;
+    height: 20px;
+    width: 500px;
+}
+.address-container{
+    display: flex;
+    align-items: flex-start;
+}
+.home-address{
+    display: inline-block;
+}
+.home-address h4{
+    width: 0px;
+    height: 0px;
+    margin:  0 0 0 0px;
+}
+.home-address .first{
+    display: flex;
+    align-items: flex-start;
+    border-left-width: 10px; 
+    border-left-style: solid;
+    border-left-color: transparent;
+}
+
+.home-address .first h5{
+    margin: 0 0 5px 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.home-address .first input{
+    background-color: #ececec;
+    border-radius: 3px;
+    height: 20px;
+    width: 250px;
+}
+.home-address .second{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 10px;
+    border-left-width: 10px; 
+    border-left-style: solid;
+    border-left-color: transparent;
+}
+.home-address .second h5{
+    margin: 0 0 5px 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.home-address .second input{
+    background-color: #ececec;
+    border-radius: 3px;
+    height: 20px;
+    width: 250px;
+}
+.home-address .third{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 10px;
+    border-left-width: 10px; 
+    border-left-style: solid;
+    border-left-color: transparent;
+}
+.home-address .third h5{
+    margin: 0 0 5px 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.home-address .third input{
+    background-color: #ececec;
+    border-radius: 3px;
+    height: 20px;
+    width: 250px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+.home-address .fourth{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 10px;
+    border-left-width: 10px; 
+    border-left-style: solid;
+    border-left-color: transparent;
+}
+.home-address .fourth h5{
+    margin: 0 0 5px 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.home-address .fourth input{
+    background-color: #ececec;
+    border-radius: 3px;
+    height: 20px;
+    width: 250px;
+}
+.work-address-container{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+.work-address{
+    display: inline-block;
+}
+.work-address h4{
+    width: 0px;
+    height: 0px;
+    margin:  0 0 0 0px;
+}
+.work-address .first{
+    display: flex;
+    align-items: flex-start;
+    border-left-width: 10px; 
+    border-left-style: solid;
+    border-left-color: transparent;
+}
+
+.work-address .first h5{
+    margin: 0 0 5px 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.work-address .first input{
+    background-color: #ececec;
+    border-radius: 3px;
+    height: 20px;
+    width: 250px;
+}
+.work-address .second{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 10px;
+    border-left-width: 10px; 
+    border-left-style: solid;
+    border-left-color: transparent;
+}
+.work-address .second h5{
+    margin: 0 0 5px 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.work-address .second input{
+    background-color: #ececec;
+    border-radius: 3px;
+    height: 20px;
+    width: 250px;
+}
+.work-address .third{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 10px;
+    border-left-width: 10px; 
+    border-left-style: solid;
+    border-left-color: transparent;
+}
+.work-address .third h5{
+    margin: 0 0 5px 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.work-address .third input{
+    background-color: #ececec;
+    border-radius: 3px;
+    height: 20px;
+    width: 250px;
+}
+.work-address .fourth{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 10px;
+    border-left-width: 10px; 
+    border-left-style: solid;
+    border-left-color: transparent;
+}
+.work-address .fourth h5{
+    margin: 0 0 5px 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.work-address .fourth input{
+    background-color: #ececec;
+    border-radius: 10px;
+}
+.graduate{
+    display: flex;
+    align-items: center;
+}
+.graduate .graduate-input{
+    padding-left: 5px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.graduate .graduate-input h5{
+    padding-right: 5px;
+}
+.graduate .graduate-input input{
+    background-color: #ececec;
+    border-radius: 3px;
+    height: 20px;
+    width: 500px;
+}
+.num-certificate{
+    display: flex;
+    align-items: center;
+}
+.num-certificate .num-certificate-input{
+    padding-left: 5px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.num-certificate .num-certificate-input h5{
+    padding-right: 5px;
+}
+.num-certificate .num-certificate-input input{
+    background-color: #ececec;
+    border-radius: 3px;
+    height: 20px;
+    width: 500px;
+}
+.attribute{
+    display: inline-block;
+}
+.attribute .head-attr{
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+.attr-config{
+    display: flex;
+}
+.attribute-detail{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.attribute-detail .detail-head
+{
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.attribute-detail .first{
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    height: 30px;
+}
+.attribute-detail .second{
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    height: 30px;
+}
+.second h5{
+    padding-right: 5px;
+}
+.typeIn{
+    background-color: #ececec;
+    border-radius: 3px;
+    height: 20px;
+    width: 500px;
+}
+.detail-head2,
+.detail-head3{
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.H2-first{
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    height: 30px;
+}
+.H2-first h5{
+    padding-right: 5px;
+}
+.detail-head3{
+    padding-left: 25px;
+}
+.H3-first{
+    display: flex;
+    padding-left: 60px;
+    align-items: center;
+    height: 30px;
+}
+.H3-first h5,.H3-first h4{
+    padding-right: 5px;
+}
+.H3-second{
+    display: flex;
+    padding-left: 60px;
+    align-items: center;
+    height: 30px;
+}
+.H3-third h5{
+    padding-right: 5px;
+}
+.H3-third{
+    display: inline-block;
+}
+.H3-third h5{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.Real-money{
+    display: flex;
+    padding-left: 200px;
+    align-items: center;
+    height: 30px;
+}
+.Bank-transfer{
+    display: flex;
+    padding-left: 200px;
+    align-items: center;
+    height: 30px;
+}
+.H3-third input{
+    background-color: #ececec;
+    border-radius: 3px;
+    height: 20px;
+    width: 150px;
+}
+.add{
+    display: flex;
+    padding-left: 200px;
+    align-items: center;
+    height: 30px;
+}
+.signature{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+}
+.left-signature{
+    display: inline-block;
+    align-items: center;
+}
+.left-signature input,
+.right-signature input{
+    background-color: #ececec;
+    border-radius: 3px;
+    height: 20px;
+    width: 150px;
+}
+.left-signature h5,
+.right-signature h5{
+    padding-right: 10px;
+    display: inline-block;
+    align-items: center;
+}
+.name-sig,
+.name-sigR,
+.date-sig,
+.date-sigR
+{
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.date-sig,
+.date-sigR{
+    height: 20px;
+    padding-left: 55px;
+}
+footer{
+    display: block;
+}
+footer h4{
+    margin: 0 0 0 0px;
+}
+.mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin: 0 0 0 0px;
+}
+.lower{
+    display: flex;
+    height: 60px;
+    margin: 0 0 0 0px;
+}
+.lowest{
+    display: flex;
+    justify-content: space-between;
+}
+.lowest .leftLow{
+    display: flex;
+    align-items: center;
+}
+.lowest .leftLow h5{
+    padding-right: 10px;
+}
+.lowest .leftLow input{
+    background-color: #ececec;
+    border-radius: 3px;
+    height: 20px;
+    width: 300px;
+}
+.lowest .rightLow{
+    display: flex;
+    align-items: center;
+}
+.lowest .rightLow h5{
+    padding-left: 10px;
+}
+.lowest .rightLow input{
+    background-color: #ececec;
+    border-radius: 3px;
+    height: 20px;
+    width: 300px;
+}

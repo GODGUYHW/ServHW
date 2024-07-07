@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Application form
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="body-wrapper">
+        <header>
+            <div class="Left">
+                <h5>
+                    เลขที่
+                </h5>
+                <input type="number" class="num" required min="0" step="1"/>
+            </div>
+            <div class="Middle">
+                <div class="mid-wrapper">
+                    <div class="logo">
+                        <img src="logo-thai-stroke-society4.jpg">
+                    </div>
+                    <div class="name-wrapper">
+                        <div class="name1">
+                            <h4>
+                                ใบสมัคร
+                            </h4>
+                        </div>
+                        <div class="name2">
+                            <h4>
+                                สมาชิกสมาคมโรคหลอดเลือดสมองไทย
+                            </h4>
+                        </div>
+                        <div class="name3">
+                            <h4>
+                                (THAI STROKE SOCIETY)
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Right">
+                <div class="form-element">
+                    <input type="file" id="img-upload" accept="image/*">
+                    <label for="img-upload" id="img-upload-preview">
+                        <img src="persopn_icon.png">
+                        <div class="button">
+                            <span>+</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="info-name">
+                <h4>
+                    1.
+                </h4>
+                <div class="name">
+                    <h5>
+                        ชื่อ
+                    </h5>
+                    <input type="text" id="input-name" required/>
+                </div>
+                <div class="surname">
+                    <h5>
+                        นามสกุล
+                    </h5>
+                    <input type="text" id="input-surname" required/>
+                </div>
+            </div>
+            <div class="info-nameEn">
+                <h4>
+                    2.
+                </h4>
+                <div class="name">
+                    <h5>
+                        Name
+                    </h5>
+                    <input type="text" id="input-name" required/>
+                </div>
+                <div class="surname">
+                    <h5>
+                        Surname 
+                    </h5>
+                    <input type="text" id="input-surname" required/>
+                </div>
+            </div>
+            <div class="birth-date">
+                <label for="birthday">
+                    <h4>3.</h4>
+                    <h5>
+                        วัน/เดือน/ปีเกิด
+                    </h5>
+                </label>
+                <input type="date" id="birth" required/>
+            </div>
+            <div class="position">
+                <h4>
+                    4.
+                </h4>
+                <div class="position-input">
+                    <h5>
+                        ตำแหน่ง หรือยศ
+                    </h5>
+                    <input type="text" id="position-in"/>
+                </div>
+            </div>
+            <div class="address-container">
+                <div class="home-address">
+                    <h4>5.</h4>
+                    <div class="first">
+                        <h5>ที่อยู่บ้านที่</h5>
+                        <input type="text" id="address" required/>
+                        <h5>หมู่ที่</h5>
+                        <input type="text" id="address" required/>
+                        <h5>ซอย</h5>
+                        <input type="text" id="address" required/>
+                        <h5>ถนน</h5>
+                        <input type="text" id="address" required/>
+                    </div>
+                    <div class="second">
+                        <h5>แขวง/ตำบล</h5>
+                        <input type="text" id="address" required/>
+                        <h5>เขต/อำเภอ</h5>
+                        <input type="text" id="address" required/>
+                        <h5>จังหวัด</h5>
+                        <input type="text" id="address" required/>
+                    </div>
+                    <div class="third">
+                        <h5>รหัสไปรษณีย์</h5>
+                        <input type="number" class="onlynum-postal" id="postalcode" required maxlength="5"/>
+                        <h5>โทรศัพท์</h5>
+                        <input type="number" class="onlynum" id="phone" required maxlength="10"/>
+                        <h5>โทรสาร</h5>
+                        <input type="number" class="onlynum" id="fax" required maxlength="10"/>
+                        <h5>โทรศัพท์มือถือ</h5>
+                        <input type="number" class="onlynum" id="mobile" required maxlength="10"/>
+                    </div>
+                    <div class="fourth">
+                        <h5>Email</h5>
+                        <input type="email" id="email" pattern=".+@example\.com" size="30" required />
+                    </div>
+                </div>
+            </div>
+            <div class="work-address-container">
+                <div class="work-address">
+                    <h4>6.</h4>
+                    <div class="first">
+                        <h5>ที่ทำงานเลขที่</h5>
+                        <input type="text" id="address" required/>
+                        <h5>หมู่ที่</h5>
+                        <input type="text" id="address" required/>
+                        <h5>ซอย</h5>
+                        <input type="text" id="address" required/>
+                        <h5>ถนน</h5>
+                        <input type="text" id="address" required/>
+                    </div>
+                    <div class="second">
+                        <h5>แขวง/ตำบล</h5>
+                        <input type="text" id="address" required/>
+                        <h5>เขต/อำเภอ</h5>
+                        <input type="text" id="address" required/>
+                        <h5>จังหวัด</h5>
+                        <input type="text" id="address" required/>
+                    </div>
+                    <div class="third">
+                        <h5>รหัสไปรษณีย์</h5>
+                        <input type="number" class="onlynum-postal" id="postalcode" required maxlength="5"/>
+                        <h5>โทรศัพท์</h5>
+                        <input type="number" class="onlynum" id="phone" required maxlength="10"/>
+                        <h5>โทรสาร</h5>
+                        <input type="number" class="onlynum" id="fax" required maxlength="10"/>
+                    </div>
+                    <div class="fourth">
+                        <h5>สถานที่ติดต่อ</h5>
+                        <input type="radio" id="home" name="location" required>
+                        <label for="home"><h5>ที่บ้าน</h5></label>
+                        <input type="radio" id="home" name="location" required>
+                        <label for="work"><h5>ที่ทำงาน</h5></label>
+                    </div>
+                </div>
+            </div>
+            <div class="graduate">
+                <h4>7.</h4>
+                <div class="graduate-input">
+                    <h5>คุณวุฒิ</h5>
+                    <input type="text" id="graduation">
+                </div>
+            </div>
+            <div class="num-certificate">
+                <h4>8.</h4>
+                <div class="num-certificate-input">
+                    <h5>เลขที่ใบประกอบวิชาชีพเวชกรรม</h5>
+                    <input type="text" id="num-certificate" required>
+                </div>
+            </div>
+            <div class="attribute">
+                <div class="head-attr">
+                    <h4>9.</h4>
+                    <h5>คุณสมบัติ</h5>
+                </div>
+                <div class="attr-config">
+                    <div class="attribute-detail">
+                        <div class="detail-head">
+                            <h4>9.1</h4>
+                            <h5>สมาชิกสามัญและสมาชิกวิชาสามัญ</h5>
+                        </div>
+                        <div class="first">
+                            <input type="radio" id="detail" name="select">
+                            <label for="detail"><h5>แพทย์ทั่วไป</h5></label>
+                            <input type="radio" id="detail1" name="select">
+                            <label for="detail"><h5>วุฒิบัตร/อนุมัติบัตรประสาทวิทยา</h5></label>
+                            <input type="radio" id="detail2" name="select">
+                            <label for="detail"><h5>วุฒิบัตร/อนุมัติบัตรประสาทศัลยศาสตร์</h5></label>
+                        </div>
+                        <div class="second">
+                            <input type="radio" id="detail" name="select">
+                            <label for="detail1"><h5>วุฒิบัตร/อนุมัติบัตรประสาทกุมารแพทย์</h5></label>
+                            <input type="radio" id="detail" name="select">
+                            <label for="detail2"><h5>แพทย์เฉพาะทางสาขาอื่นๆ โปรดระบุ</h5></label>
+                            <input type="text" class="typeIn" id="detail-text" name="others">
+                        </div>
+                        <div class="detail-head2">
+                            <h4>9.2</h4>
+                            <h5>สมาชิกสมทบ</h5>
+                        </div>
+                        <div class="H2-first">
+                            <input type="radio" id="detail1" name="select1">
+                            <label for="detail"><h5>พยาบาล</h5></label>
+                            <input type="radio" id="detail1" name="select1">
+                            <label for="detail"><h5>อื่นๆ โปรดระบุ</h5></label>
+                            <input type="text" class="typeIn" id="detail-text" name="others">                            
+                        </div>
+                        <div class="detail-head3">
+                            <h5>ข้าพเจ้าขอสมัครเป็นสมาชิกสมาคมโรคหลอดเลือดสมองไทย โดยแนบหลักฐานดังนี้</h5>
+                        </div>
+                        <div class="H3-first">
+                            <h5>1.</h5>
+                            <h5>รูปถ่ายขนาด 2 นิ้ว จำนวน 1 รูป</h5>             
+                        </div>
+                        <div class="H3-second">
+                            <h5>2. เงินค่าสมาชิกตลอดชีพ</h5>
+                            <input type="radio" id="detail" name="select2">
+                            <label for="detail"><h5>สมาชิกสามัญและสมาชิกวิชาสามัญ จำนวน 1000 บาท</h5></label>
+                            <input type="radio" id="detail1" name="select2">
+                            <label for="detail"><h5>สมาชิกสมทบ จำนวน 600 บาท โดยชำระเป็น</h5></label>
+                        </div>
+                        <div class="H3-third">
+                            <div class="Real-money">
+                                <h5>เงินสด จำนวน</h5>
+                                <input type="number" id="money">
+                                <h5>บาท</h5>
+                            </div>
+                            <div class="Bank-transfer">
+                                <h5>เช็คคีดคร่อม จำนวน</h5>
+                                <input type="number" id="money">
+                                <h5>บาท</h5>
+                            </div>
+                            <div class="add">
+                                <h5>โดยสั่งจ่าย "สมาชิกสมาคมโรคหลอดเลือดสมองไทย"</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="signature">
+                <div class="left-signature">
+                    <div class="name-sig">
+                        <h5>ลงชื่อผู้รับเงิน</h5>
+                        <input type="text" id="signature">
+                    </div>
+                    <div class="date-sig">
+                        <label for="signature-date">
+                            <h5>วันที่</h5>
+                        </label>
+                        <input type="date" id="birth" required/>
+                    </div>
+                </div>
+                <div class="right-signature">
+                    <div class="name-sigR">
+                        <h5>ลงชื่อผู้สมัคร</h5>
+                        <input type="text" id="signature">
+                    </div>
+                    <div class="date-sigR">
+                        <label for="signature-date">
+                            <h5>วันที่</h5>
+                        </label>
+                        <input type="date" id="birth" required/>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h4>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h4>
+            <div class="mid">
+                <h5>เฉพาะเจ้าหน้าที่</h5>
+            </div>
+            <div class="lower">
+                <h5>ได้รับเป็นสมาชิกประเภท</h5>
+                <input type="radio" id="confirm" name="select4">
+                <label for="detail"><h5>สามัญ</h5></label>
+                <input type="radio" id="confirm" name="select4">
+                <label for="detail"><h5>วิชาสัญ</h5></label>
+                <input type="radio" id="confirm" name="select4">
+                <label for="detail"><h5>สมาชิกสมทบ</h5></label>
+            </div>
+            <div class="lowest">
+                <div class="leftLow">
+                    <label for="detail"><h5>นายทะเบียน</h5></label>
+                    <input type="text" id="confirm">
+                </div>
+                <div class="rightLow">
+                    <input type="text" id="confirm">
+                    <label for="detail"><h5>นายกสมาคม/เลขาธิการ</h5></label>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
